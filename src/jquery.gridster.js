@@ -7,7 +7,9 @@
  */
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define(['jquery', 'gridster-draggable', 'gridster-collision'], factory);
     } else {

@@ -7,7 +7,9 @@
  */
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define('gridster-coords', ['jquery'], factory);
     } else {

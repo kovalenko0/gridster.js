@@ -1,9 +1,11 @@
-/*! gridster.js - v0.5.6 - 2014-09-25
+/*! gridster.js - v0.5.6 - 2015-11-01
 * http://gridster.net/
-* Copyright (c) 2014 ducksboard; Licensed MIT */
+* Copyright (c) 2015 ducksboard; Licensed MIT */
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define('gridster-coords', ['jquery'], factory);
     } else {
@@ -121,7 +123,9 @@
 }));
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define('gridster-collision', ['jquery', 'gridster-coords'], factory);
     } else {
@@ -429,7 +433,9 @@
 })(window);
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define('gridster-draggable', ['jquery'], factory);
     } else {
@@ -854,7 +860,9 @@
 }));
 
 ;(function(root, factory) {
-
+    if (global) {
+      root = global;
+    }
     if (typeof define === 'function' && define.amd) {
         define(['jquery', 'gridster-draggable', 'gridster-collision'], factory);
     } else {
